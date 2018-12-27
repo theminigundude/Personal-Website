@@ -182,7 +182,6 @@ function timeline(input) {
 
     target_text.css("display", "flex");
     target_text.hide();
-    console.log($(".li .complete > .status"));
     target_text.fadeIn(0, function() {
       target_text.removeClass("close").addClass("open");
     });
