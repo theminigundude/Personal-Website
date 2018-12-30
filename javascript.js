@@ -13,6 +13,14 @@ $(document).ready(function() {
     setTimeout('topArrow()');
   });
 
+  var width = ($( window ).width() / 2) - 12.5;
+  $( ".downArrow" ).css("left", width);
+
+  $( window ).resize(function() {
+    var width = ($( window ).width() / 2) - 12.5;
+    $( ".downArrow" ).css("left", width / 2);
+  });
+
 
 
   var myChart = new Chart($("#chart_web"), {
